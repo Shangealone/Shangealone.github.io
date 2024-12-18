@@ -1,0 +1,250 @@
+/* General Body Styling */
+.centered-body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0a1324, #23395d); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Portfolio Container */
+#portfolio-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* White Platform */
+.white-platform {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Decorative Circle Behind Platform */
+.white-platform::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -100px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.white-platform::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -120px;
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Header Styling */
+#portfolio-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-title {
+    font-size: 2.8em;
+    color: #23395d;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-subtitle {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* About Me Section */
+#about-me-section {
+    margin-top: 30px;
+    background-color: #ffffff; /* White background */
+    border: 2px solid #e0e0e0; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Inner spacing */
+}
+
+/* Projects Section */
+#projects-section {
+    margin-top: 30px;
+    background-color: #ffffff; /* White background */
+    border: 2px solid #e0e0e0; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Inner spacing */
+}
+
+/* Section Title Styling */
+.section-title {
+    font-size: 2em;
+    color: #23395d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Description Text Styling */
+.description-text {
+    font-size: 1.1em;
+    color: #666;
+    text-align: center;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+/* Projects Table Styling */
+.projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-header {
+    background-color: #23395d;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.project-row {
+    border-bottom: 1px solid #ddd;
+}
+
+.project-row:last-child {
+    border-bottom: none;
+}
+
+.project-name,
+.project-description,
+.project-link {
+    padding: 15px;
+    font-size: 0.95em;
+    color: #333;
+}
+
+.project-description {
+    color: #555;
+}
+
+.project-link a {
+    color: #23395d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link a:hover {
+    color: #45a049;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .white-platform {
+        padding: 20px;
+    }
+
+    .header-title {
+        font-size: 2em;
+    }
+
+    .section-title {
+        font-size: 1.6em;
+    }
+
+    .description-text {
+        font-size: 1em;
+    }
+
+    .projects-table {
+        font-size: 0.85em;
+    }
+}
+
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    object-fit: cover;
+    margin-right: 20px;
+    aspect-ratio: 1 / 1;
+}
+.about-me-content {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.social-media-icons {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.section-title {
+    font-size: 2em; /* Larger title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #23395d; /* Dark text color */
+}
+
+.icon-container {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center icons */
+    gap: 20px; /* Space between icons */
+}
+
+.icon {
+    font-size: 2.5em; /* Increase icon size */
+    padding: 10px; /* Add padding around icons */
+    transition: transform 0.3s; /* Smooth transform on hover */
+    color: #23395d; /* Default icon color */
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Enlarge icon on hover */
+}
+
+.facebook:hover {
+    color: #3b5998; /* Facebook color */
+}
+
+.snapchat:hover {
+    color: #FFFC00; /* Snapchat color */
+}
+
+.youtube:hover {
+    color: #FF0000; /* YouTube color */
+}
+
+.instagram:hover {
+    color: #E1306C; /* Instagram color */
+}
